@@ -56,7 +56,6 @@ import com.android.volley.toolbox.StringRequest;
 import com.dd.datastatistics.bean.ResultBaseBean;
 import com.dd.datastatistics.bean.ServerResult;
 import com.dd.whateat.DdApplication;
-import com.dd.whateat.MainActivity;
 import com.dd.whateat.R;
 import com.dd.whateat.bean.DdConst;
 import com.dd.whateat.bean.DdErrorCode;
@@ -1180,5 +1179,8 @@ public class SendRequest {
 			return;
 		}
 		postParams.add(new BasicNameValuePair(key, val));
+	}
+	static ServerResult getShopList(List<NameValuePair> postParams, String key, String val){
+		return null;
 	}
 }

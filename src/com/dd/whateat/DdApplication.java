@@ -2,8 +2,10 @@ package com.dd.whateat;
 
 import org.apache.http.HttpHost;
 
+import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -12,12 +14,15 @@ import android.util.DisplayMetrics;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
+import com.dd.whateat.constents.DdConstants;
 import com.dd.whateat.utils.DdLog;
 public class DdApplication extends Application {
 	private static final String TAG = "DdApplication";
 	public static DdApplication CONTEXT;
 	public RequestQueue requestQueue;
 	private static String apnType = "";
+	
+	private static SharedPreferences mAppPreferences = null;
 	
 	public static int mScreenWidth = 0;
 	public static int mScreenHeight = 0;
@@ -35,8 +40,12 @@ public class DdApplication extends Application {
 		DdApplication.mScreenWidth = mDisplayMetrics.widthPixels;
 		DdApplication.mScreenHeight = mDisplayMetrics.heightPixels;
 		requestQueue = Volley.newRequestQueue(DdApplication.CONTEXT);
+		mAppPreferences = getSharedPreferences(DdConstants.APPLICATION_NAME, Activity.MODE_PRIVATE);
 	}
 	
+	public SharedPreferences getAppPreferences(){
+		return mAppPreferences;
+	}
 
 	public final static HttpHost getHttpProxy() {
 		HttpHost httpHost = null;

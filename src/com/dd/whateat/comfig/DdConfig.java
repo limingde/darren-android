@@ -32,7 +32,8 @@ public final class DdConfig {
 
 
 	//http请求的地地址
-	public static final String JSON_URL = "http://api.meilapp.com";// 线上地址
+	public static final String JSON_URL = "http://openapi.aibang.com/";// 线上地址
+	public final static String APK_KEY="59dfaf9ca55052fc6bce01cf9feb9ef2";
 
 	public static final String JSON_URL_ORIGINAL = JSON_URL;//当开发修改了请求host之后，需要用这个复原，初始与JSON_URL相同
 

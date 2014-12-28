@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/px_145"
+    android:paddingTop="@dimen/px_10" >
+
+    <TextView
+        android:id="@+id/pull_to_refresh_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px_10"
+        android:text="@string/pull_to_refresh_article_pull_down_label"
+        android:textColor="#6d6d6d"
+        android:textSize="@dimen/px_23" />
+
+    <TextView
+        android:id="@+id/pull_to_refresh_next_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pull_to_refresh_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px_17"
+        android:paddingBottom="@dimen/px_30"
+        android:text="@string/pull_to_refresh_article_pre_title_label"
+        android:textColor="#9b9a9a"
+        android:textSize="@dimen/px_19" />
+
+    <ProgressBar
+        android:id="@+id/pull_to_refresh_progress"
+        android:layout_width="@dimen/px_50"
+        android:layout_height="@dimen/px_50"
+        android:layout_marginLeft="@dimen/px_117"
+        android:layout_marginRight="@dimen/px_40"
+        android:layout_marginTop="@dimen/px_10"
+        android:indeterminateDrawable="@drawable/pull_progress"
+        android:visibility="gone" >
+    </ProgressBar>
+
+    <ImageView
+        android:id="@+id/pull_to_refresh_image"
+        android:layout_width="@dimen/px_50"
+        android:layout_height="@dimen/px_50"
+        android:layout_marginLeft="@dimen/px_117"
+        android:layout_marginRight="@dimen/px_40"
+        android:layout_marginTop="@dimen/px_10" />
+
+</RelativeLayout>

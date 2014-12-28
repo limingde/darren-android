@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+     >
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+     >
+    <TextView
+        android:id="@+id/pull_to_refresh_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/pull_to_refresh_pull_up_label"
+        android:textColor="#6d6d6d"
+        android:textSize="@dimen/px_23" />
+
+    <ProgressBar
+        android:id="@+id/pull_to_refresh_progress"
+        android:layout_width="@dimen/px_50"
+        android:layout_height="@dimen/px_50"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/px_117"
+        android:layout_marginRight="@dimen/px_40"
+        android:indeterminateDrawable="@drawable/pull_progress"
+        android:visibility="gone" >
+    </ProgressBar>
+    <!--  
+    <ProgressBar
+        android:id="@+id/pull_to_refresh_pull"
+        android:layout_width="@dimen/px_50"
+        android:layout_height="@dimen/px_50"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/px_117"
+        android:layout_marginRight="@dimen/px_40"
+        android:indeterminateDrawable="@anim/pull"
+        android:visibility="gone" >
+    </ProgressBar>
+    <ProgressBar
+        android:id="@+id/pull_to_refresh_loading"
+		android:layout_width="@dimen/px_50"
+        android:layout_height="@dimen/px_50"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/px_117"
+        android:layout_marginRight="@dimen/px_40"
+        android:indeterminateDrawable="@anim/loading"
+        android:visibility="gone" >
+    </ProgressBar>
+    
+    <com.meilapp.meila.widget.GifImageView
+        android:id="@+id/pull_to_refresh_gifview"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/px_117"
+        android:layout_marginRight="@dimen/px_40"
+        android:scaleType="centerInside"
+        android:src="@drawable/pull_1"
+        android:visibility="gone" />
+<<<<<<< HEAD
+    -->
+    	<ProgressBar android:id="@+id/pull_to_refresh_gifview_pull"
+	        android:layout_width="67.2dp"
+	        android:layout_height="40dp"
+	        android:indeterminateDrawable="@drawable/frame_loading_pull"
+	        android:visibility="gone" />
+        <ProgressBar android:id="@+id/pull_to_refresh_gifview_loading"
+	        android:layout_width="67.2dp"
+	        android:layout_height="40dp"
+	        android:indeterminateDrawable="@drawable/frame_loading_loading"
+	        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/pull_to_refresh_image"
+        android:layout_width="@dimen/px_50"
+        android:layout_height="@dimen/px_50"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/px_117"
+        android:layout_marginRight="@dimen/px_40" />
+</RelativeLayout>
+</RelativeLayout>

@@ -2,7 +2,7 @@ package com.dd.whateat.constents;
 
 public final class DdConstants {
 	// app name
-	public static final String APPLICATION_NAME = "MEILAPP";
+	public static final String APPLICATION_NAME = "DDAPP";
 
 	// 获取用户图片
 	public static final String MIME_TYPE_IMAGE = "image/*";
